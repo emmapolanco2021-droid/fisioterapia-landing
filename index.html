@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisioterapia Integral | Tu Bienestar en Buenas Manos</title>
+    <!-- Importamos fuente profesional (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Conectamos el archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra superior con Modo Oscuro/Claro -->
+    <div class="barra-superior">
+        <span class="logo-texto">Fisioterapia Integral</span>
+        <button id="btn-modo" class="btn-modo">🌙 Modo Oscuro</button>
+    </div>
+
+    <!-- Sección Principal (Hero) -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <div id="estado-negocio" class="badge-estado">
+                <span id="punto-estado"></span> 
+                <span id="texto-estado">Verificando horario...</span>
+            </div>
+            <h1>Recupera tu movilidad y bienestar</h1>
+            <p>
+                Especialistas en fisioterapia deportiva, rehabilitación y alivio del dolor crónico en Naguanagua. Vuelve a moverte sin limitaciones.
+            </p>
+            <p class="horario-texto">Horario de atención: 6:00 a.m. - 10:00 p.m.</p>
+            <a href="https://wa.me/584144088604?text=Hola,%20me%20gustaría%20agendar%20una%20cita%20de%20fisioterapia." class="btn-reserva" target="_blank">
+                Reserva una Cita por WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Nosotros / Imagen -->
+    <section class="sobre-nosotros">
+        <div class="contenedor-nosotros">
+            <div class="texto-nosotros">
+                <h2>Cuidamos de tu salud con atención personalizada</h2>
+                <p>
+                    Contamos con equipos modernos y profesionales certificados para acompañarte en cada paso de tu recuperación física, garantizando un trato humano y cercano.
+                </p>
+            </div>
+            <div class="imagen-nosotros">
+                <img src="img/fisioterapia.jpg" alt="Sesión de fisioterapia y rehabilitación">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Nuestros Servicios -->
+    <section class="servicios">
+        <h2>Nuestras Especialidades</h2>
+        <div class="contenedor-tarjetas">
+            <div class="tarjeta">
+                <h3>Fisioterapia Deportiva</h3>
+                <p>Recuperación acelerada de lesiones, prevención y optimización del rendimiento físico para atletas y deportistas.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Rehabilitación Postquirúrgica</h3>
+                <p>Acompañamiento profesional y ejercicios guiados para recuperar la movilidad total tras una cirugía.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Alivio del Dolor Crónico</h3>
+                <p>Tratamientos especializados para dolores de espalda, cervicalgias, tendinitis y contracturas musculares.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva Sección: Carrusel de Testimonios -->
+    <section class="testimonios">
+        <h2>Lo que dicen nuestros pacientes</h2>
+        <div class="carrusel-contenedor">
+            <button class="carrusel-btn prev" id="btn-prev">&#10094;</button>
+            
+            <div class="carrusel-track-container">
+                <div class="carrusel-track" id="carrusel-track">
+                    <div class="tarjeta-testimonio slide actual">
+                        <p class="comentario">"Llegué con un dolor lumbar insoportable y en pocas sesiones recuperé mi movilidad. La atención es sumamente profesional."</p>
+                        <h4 class="paciente">- Carlos Mendoza</h4>
+                    </div>
+                    <div class="tarjeta-testimonio slide">
+                        <p class="comentario">"Excelente atención en fisioterapia deportiva. Me ayudaron a recuperarme de mi lesión de rodilla a tiempo para la competencia."</p>
+                        <h4 class="paciente">- Sofía Rivas</h4>
+                    </div>
+                    <div class="tarjeta-testimonio slide">
+                        <p class="comentario">"El ambiente es muy relajante y los resultados se notan desde el primer día. 100% recomendados en Naguanagua."</p>
+                        <h4 class="paciente">- Alejandro Torres</h4>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carrusel-btn next" id="btn-next">&#10095;</button>
+        </div>
+        <!-- Puntos indicadores del carrusel -->
+        <div class="carrusel-puntos" id="carrusel-puntos">
+            <span class="punto activo" data-index="0"></span>
+            <span class="punto" data-index="1"></span>
+            <span class="punto" data-index="2"></span>
+        </div>
+    </section>
+
+    <!-- Sección: Preguntas Frecuentes (FAQ) -->
+    <section class="faq-section">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-contenedor">
+            <div class="faq-item">
+                <button class="faq-pregunta">
+                    ¿Necesito una orden médica para asistir a fisioterapia?
+                    <span class="faq-flecha">▼</span>
+                </button>
+                <div class="faq-respuesta">
+                    <p>No es estrictamente obligatoria para una evaluación inicial o sesiones preventivas, pero si tienes informes previos, te recomendamos traerlos.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-pregunta">
+                    ¿Cuánto dura cada sesión de fisioterapia?
+                    <span class="faq-flecha">▼</span>
+                </button>
+                <div class="faq-respuesta">
+                    <p>Las sesiones tienen una duración aproximada de entre 45 y 60 minutos, dependiendo del tratamiento especializado que requieras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Ubicación -->
+    <section class="ubicacion-section">
+        <h2>¿Dónde Encontrarnos?</h2>
+        <div class="ubicacion-contenedor">
+            <div class="info-ubicacion">
+                <h3>Consultorio Principal</h3>
+                <p><strong>Dirección:</strong> Calle Puerto Cabello, Casa 186-C.</p>
+                <p><strong>Sector:</strong> Cerca de Residencias Quebrada Fresca</p>
+                <p><strong>Ciudad:</strong> Naguanagua, Estado Carabobo</p>
+                <p>¡Te esperamos para brindarte la mejor atención y ayudarte a recuperar tu bienestar físico!</p>
+            </div>
+            <div class="mapa-ubicacion">
+                <div class="mapa-frame-contenedor">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.25!2d-68.015!3d10.283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8065355b4b1a1f%3A0x1998f8287e0254df!2sConjunto%20Residencial%20Quebrada%20Fresca!5e0!3m2!1ses!2sve!4v1710000000000!5m2!1ses!2sve" 
+                        width="100%" 
+                        height="250" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Pie de Página (Footer) Legal y Derechos de Autor -->
+    <footer class="footer-legal">
+        <div class="footer-contenido">
+            <p>&copy; <span id="anio-actual"></span> Fisioterapia Integral. Todos los derechos reservados.</p>
+            <p class="footer-direccion">Calle Puerto Cabello, Casa 186-C, Residencias Quebrada Fresca, Naguanagua, Carabobo, Venezuela.</p>
+            <div class="footer-links">
+                <a href="#terminos" onclick="abrirModalTerminos(event)">Términos y Condiciones</a>
+                <span>|</span>
+                <a href="#privacidad" onclick="abrirModalPrivacidad(event)">Política de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modales Legales (Ocultos por defecto) -->
+    <div id="modal-legal" class="modal-legal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+            <div id="texto-modal"></div>
+        </div>
+    </div>
+    <!-- Conectamos el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
